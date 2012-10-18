@@ -23,6 +23,9 @@ remove every space and use variable names that don't make any sense but this is 
 to be an educational repo and compressing the hell out of your code helps no one.
 4. Follow the basic organizational structure that has been established. We don't want 
 to loose anything or for it to become unruly. 
+5. Additional answers should be be added via pull requests. Whenever a new set of questions
+are asked the folders will be updated by a commit but all answer submission should be done
+by pull request.
 
 Organization
 ============

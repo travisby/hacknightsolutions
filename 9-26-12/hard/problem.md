@@ -13,4 +13,4 @@ the value of SKY is 55.
 A triangle word a word thats value is a triangle number. SKY happens to be a triangle word
 because 55 is the 10th triangle number. 
 
-Write a function that takes in a string and returns true if it is a triangle word.[Source](http://bit.ly/MnToog)
+Write a function that takes in a string and returns true if it is a triangle word. [Source](http://bit.ly/MnToog)
