@@ -1,3 +1,3 @@
-[Traingle Numbers](http://projecteuler.net/problem=42)
+[Triangle Numbers](http://projecteuler.net/problem=42)
 ====
 See link
