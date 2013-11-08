@@ -9,15 +9,17 @@ func isDivisibleBy(n int, m int) bool {
 }
 
 func divisors(n int) []int {
-	var results []int
-
-	for i := 1; i <= n; i++ {
-		if isDivisibleBy(n, i) {
-			results = append(results, i)
+	var recur func(int, int, []int) []int
+	recur = func(a int, b int, r []int) []int {
+		if b < 1 {
+			return r
+		} else if isDivisibleBy(a, b) {
+			r = append(r, b)
 		}
-	}
 
-	return results
+		return recur(a, b-1, r)
+	}
+	return recur(n, n, make([]int, 0))
 }
 
 func isPrime(n int) bool {
