@@ -9,6 +9,8 @@ func isDivisibleBy(n int, m int) bool {
 }
 
 func divisors(n int) []int {
+	// TODO follows pattern for a fold / reduce
+	// should look into replacing with one instead
 	var recur func(int, int, []int) []int
 	recur = func(a int, b int, r []int) []int {
 		if b < 1 {
@@ -27,6 +29,8 @@ func isPrime(n int) bool {
 }
 
 func listSexy(n int) [][]int {
+	// TODO follows pattern for a fold / reduce
+	// should look into replacing with one instead
 	var results [][]int
 
 	for i := 0; i <= n; i++ {
