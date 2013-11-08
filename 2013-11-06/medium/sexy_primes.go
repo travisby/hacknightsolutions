@@ -4,18 +4,24 @@ import "os"
 import "strconv"
 import "fmt"
 
-func isPrime(n int) bool {
-	// definition
-	if n == 1 {
-		return false
-	}
+func isDivisibleBy(n int, m int) bool {
+	return n%m == 0
+}
 
-	for i := n - 1; i > 1; i-- {
-		if n%i == 0 {
-			return false
+func divisors(n int) []int {
+	var results []int
+
+	for i := 1; i <= n; i++ {
+		if isDivisibleBy(n, i) {
+			results = append(results, i)
 		}
 	}
-	return true
+
+	return results
+}
+
+func isPrime(n int) bool {
+	return len(divisors(n)) == 2
 }
 
 func listSexy(n int) [][]int {
